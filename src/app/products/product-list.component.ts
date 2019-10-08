@@ -28,6 +28,10 @@ export class ProductListComponent {
       this.listFilter = 'cart';
   }
 
+  onRatingClicked(message: string): void {
+    this.pageTitle = 'Product List: ' + message;
+  }
+
   filteredProducts: IProduct[];
   products: IProduct[] = [
     {
